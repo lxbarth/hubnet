@@ -45,7 +45,6 @@
     <?php endif; ?>
 
     <div id='main' class='clear-block'>
-      <?php if ($breadcrumb) print $breadcrumb; ?>
       <?php if ($title): ?><h2 class='page-title'><?php print $title ?></h2><?php endif; ?>
       <?php if ($help || ($show_messages && $messages)): ?>
         <div id='console'>
@@ -53,10 +52,9 @@
           <?php if ($show_messages && $messages): print $messages; endif; ?>
         </div>
       <?php endif; ?>
-      <div id='content' class='clear-block'>
-        <?php if ($tabs) print $tabs ?>
-        <?php if ($tabs2) print $tabs2 ?>
-        <?php print $content ?></div>
+      <?php if ($tabs) print $tabs ?>
+      <?php if ($tabs2) print $tabs2 ?>
+      <div id='content' class='clear-block'><?php print $content ?></div>
     </div>
 
     <?php if ($right): ?>

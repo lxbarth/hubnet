@@ -18,8 +18,9 @@ div#footer {
 
 div.form-item { margin: 10px 0px; }
 
+input.teaser-button,
 input.form-submit {
-  background-color: #999;
+  background-color: #aaa;
   color: #fff;
 /*  float: right;*/
   font-size: 11px;
@@ -30,7 +31,11 @@ input.form-submit {
   -moz-border-radius: 15px;
 }
 
-input.form-submit:hover { background-color: #9f9f9f; }
+input.teaser-button:hover,
+input.form-submit:hover { 
+  background-color: #b0b0b0;
+  cursor: pointer;
+}
 
 html.js input.form-autocomplete { background-position: 100% 5px; }
 
@@ -130,7 +135,7 @@ div#hub-bar { padding-top: 10px; }
 
 #branding a.add-story:before { content:"+ "; }
 
-#branding a.add-story:hover { opacity: 0.8; }
+#branding a.add-story:hover { opacity: 0.9; }
 
 /* == Navigation ====================================================== */
 
@@ -238,6 +243,8 @@ h2.node-title a { color: #a02c2c; }
   font-style: italic;
 }
 
+.node-links ul.links { float: right; }
+
 .node-links ul.links li a { float: none; }
 
 .node-links ul.links li { padding: 0px; }
@@ -246,18 +253,28 @@ h2.node-title a { color: #a02c2c; }
   background-color: #eee;
   color: #666;
   margin-left: 10px;
-  padding: 2px 10px;
+  padding: 5px 10px;
   -moz-border-radius: 5px;
 }
 
 .node-links a:hover { background-color: #e0e0e0; }
+
+.node-links li.comment_forbidden a {
+  background-color: transparent;
+  color: #a02c2c;
+  margin: 0px;
+  padding: 0px;
+  -moz-border-radius: 0px;
+}
+
+.node-links li.comment_forbidden a:hover { text-decoration: underline; }
 
 /* == Page: Content: Recent Activity Stream =========================== */
 
 .view-activity div.views-row {
   border-bottom: 1px solid #eee;
   font-size: 14px;
-  padding: 10px;
+  padding: 10px 10px 10px 60px;
   margin: 0px -10px;
 }
 
@@ -265,7 +282,7 @@ h2.node-title a { color: #a02c2c; }
   background: transparent url(images/sprite-icons.png) 0px 0px no-repeat;
   display: block;
   float: left;
-  margin: 5px 10px 10px 0px;
+  margin: 5px 10px 10px -50px;
   height: 40px;
   width: 40px;
   text-indent: -9999px;
@@ -396,3 +413,5 @@ div#footer { padding: 10px; }
   padding: 5px 10px;
   -moz-border-radius: 3px;
 }
+
+.feed-icon img { margin: 0px 10px -4px 0px; }
