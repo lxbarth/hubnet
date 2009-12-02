@@ -10,8 +10,15 @@ function hubnet_preprocess_page (&$vars) {
   }
 
   $settings = variable_get('theme_hubnet_settings', array());
-  $vars['header_color'] = $settings['header_color'];
-  $vars['header_color_dark'] = $settings['header_color_dark'];
+  $data = '<style type="text/css">'."\n";
+  $data .= "div#branding div.limiter {\n";
+  $data .= "  background-color: {$settings['header_color']};\n";
+  $data .= "}\n";
+  $data .= "div#navigation div.limiter {\n";
+  $data .= "  background-color: {$settings['header_color_dark']};\n";
+  $data .= "}\n";
+  $data .= "</style>\n";
+  $vars['styles'] .= $data;
 }
 
 function hubnet_preprocess_node (&$vars) {

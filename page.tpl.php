@@ -21,14 +21,14 @@
     </div></div>
   <?php endif; ?>
 
-  <div id='branding'><div class='limiter clear-block' style='background-color:<?php print $header_color ?>'>
+  <div id='branding'><div class='limiter clear-block'>
     <?php if ($logged_in): ?><a class='add-story' href='<?php print $base_path ?>node/add/story'>Add Story</a><?php endif; ?>
     <?php if ($logo) print $logo ?>
     <?php if ($site_name): ?><h1 class='site-name'><?php print $site_name ?></h1><?php endif; ?>
     <?php if ($site_slogan): ?><h2 class='site-slogan'><?php print $site_slogan ?></h2><?php endif; ?>
   </div></div>
 
-  <div id='navigation'><div class='limiter clear-block' style='background-color:<?php print $header_color_dark ?>'>
+  <div id='navigation'><div class='limiter clear-block'>
     <?php if (isset($primary_links)) : ?>
       <?php print theme('links', $primary_links, array('class' => 'links primary-links')) ?>
       <?php if ($search_box): ?><div class="block block-theme"><?php print $search_box ?></div><?php endif; ?>
