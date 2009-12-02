@@ -22,7 +22,7 @@
   <?php endif; ?>
 
   <div id='branding'><div class='limiter clear-block'>
-    <?php if ($logged_in): ?><a class='add-story' href='<?php print $base_path ?>node/add/story'>Add Story</a><?php endif; ?>
+    <?php if ($action_link) print $action_link ?>
     <?php if ($logo) print $logo ?>
     <?php if ($site_name): ?><h1 class='site-name'><?php print $site_name ?></h1><?php endif; ?>
     <?php if ($site_slogan): ?><h2 class='site-slogan'><?php print $site_slogan ?></h2><?php endif; ?>

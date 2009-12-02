@@ -9,6 +9,10 @@ function hubnet_preprocess_page (&$vars) {
     $vars['hub_bar'] = osso_hub_bar();
   }
 
+  if (user_access('create story content')) {
+    $vars['action_link'] = l(t('Add Story'), 'node/add/story', array('attributes' => array('class' => 'add-story')));
+  }
+
   $settings = variable_get('theme_hubnet_settings', array());
   $data = '<style type="text/css">'."\n";
   $data .= "div#branding div.limiter {\n";
