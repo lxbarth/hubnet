@@ -14,17 +14,50 @@ div#footer {
   width: 800px;
 }
 
+/* == Forms =========================================================== */
+
+input.form-submit {
+  background-color: #999;
+  color: #fff;
+/*  float: right;*/
+  font-size: 11px;
+  font-weight: bold;
+  margin-right: 10px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  -moz-border-radius: 15px;
+}
+
+input.form-submit:hover { background-color: #9f9f9f; }
+
+html.js input.form-autocomplete { background-position: 100% 5px; }
+
 input.form-text,
-textarea { padding: 4px; }
+textarea { 
+  background-color: #fff;
+  padding: 4px;
+}
+
+select {
+  background-color: #fff;
+  padding: 3px;
+}
 
 /* == Links =========================================================== */
 
 ul.links li { padding: 0px 10px; }
 
-h1 a,
-h2 a,
-.breadcrumb a,
-ul.links a { text-decoration: none; }
+a {
+  color: #a02c2c;
+  text-decoration: none; 
+}
+
+a:hover { text-decoration: underline; }
+
+h1 a:hover,
+h2 a:hover,
+.breadcrumb a:hover,
+ul.links a:hover { text-decoration: none; }
 
 
 /* == Universal Top Bar =============================================== */
@@ -72,6 +105,7 @@ div#hub-bar { padding-top: 10px; }
 #branding h1.site-name a {
   color: #fff;
   font-size: 30px;
+  letter-spacing: -1px;
 }
 
 #branding h2.site-slogan {
@@ -210,6 +244,64 @@ div.node-content { margin: 10px; }
 
 .node-links a:hover { background-color: #e0e0e0; }
 
+/* == Recent Activity Stream ========================================== */
+
+.view-activity div.views-row {
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  margin: 0px;
+  padding: 10px;
+}
+
+.view-activity .views-row div.views-field-field-type-value {
+  background: transparent url(images/sprite-icons.png) 0px 0px no-repeat;
+  display: block;
+  float: left;
+  margin: 5px 10px 10px 0px;
+  height: 50px;
+  width: 50px;
+  text-indent: -9999px;
+}
+
+.view-activity .views-row div.activity-type-comment {
+  background-position: 0px 0px
+}
+
+.view-activity .views-row div.activity-type-post {
+  background-position: -50px 0px;
+}
+
+.view-activity div.views-field-title { font-weight: bold; }
+
+.view-activity div.views-field-timestamp {
+  color: #666;
+  font-size: 12px;
+}
+
+/* == Content Editing ================================================= */
+
+div.node-form,
+div.box {
+  background-color: #f6f6f6;
+  padding: 10px;
+  -moz-border-radius: 3px;
+}
+
+h2.box-title {
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  margin-bottom: 10px;
+  padding-bottom: 9px;
+}
+
+div.collapsible {
+  background-color: #eee;
+  border: 1px solid #e0e0e0;
+  margin: 10px 0px;
+  padding: 4px 9px;
+  -moz-border-radius: 3px;
+}
+
 /* == OSSO Sidebar ==================================================== */
 
 ul.osso-tabs {
@@ -240,6 +332,7 @@ form#user-login {
   background-color: #e6e6e6;
   clear: right;
   float: right;
+  margin: 10px 0px;
   width: 320px;
 }
 
@@ -254,24 +347,13 @@ form#user-login {
 #user-register input.form-text,
 #user-pass input.form-text,
 #user-login input.form-text {
-  background-color: #fff;
   font-size: 18px;
   width: 290px;
 }
 
 #user-register input.form-submit,
 #user-pass input.form-submit,
-#user-login input.form-submit {
-  background-color: #999;
-  color: #fff;
-  float: right;
-  font-size: 11px;
-  font-weight: bold;
-  margin: 0px 10px 10px 0px;
-  padding: 5px 15px;
-  text-transform: uppercase;
-  -moz-border-radius: 15px;
-}
+#user-login input.form-submit { margin: 0px 10px 10px 0px; }
 
 /* == Footer ========================================================== */
 
