@@ -77,8 +77,9 @@ div#hub-bar { padding-top: 10px; }
   padding: 2px 0px;
 }
 
-#hub-bar ul.primary-links .first {
-  background-color: #4d4d4d;
+#hub-bar li.provider {
+  background-color: #4f4f4f;
+  margin: 1px 0px;
   -moz-border-radius-topleft: 2px;
   -moz-border-radius-bottomleft: 2px;
   -webkit-border-top-left-radius: 2px;
@@ -86,6 +87,8 @@ div#hub-bar { padding-top: 10px; }
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
 }
+
+#hub-bar li.provider a { padding: 1px 0px; }
 
 #hub-bar div.limiter {
   background-color: #333;
