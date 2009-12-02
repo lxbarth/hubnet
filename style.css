@@ -22,7 +22,6 @@ input.teaser-button,
 input.form-submit {
   background-color: #aaa;
   color: #fff;
-/*  float: right;*/
   font-size: 11px;
   font-weight: bold;
   margin-right: 10px;
@@ -120,7 +119,6 @@ div#hub-bar { padding-top: 10px; }
 
 #branding a.add-story {
   background-color: #fff;
-/*  color: #a02c2c;*/
   float: right;
   font-weight: bold;
   margin: 10px;
@@ -210,7 +208,12 @@ div#console { margin: 10px 0px; }
   -moz-border-radius: 3px;
 }
 
-/* == Page: Content =================================================== */
+/* == Page: Main ====================================================== */
+
+body.sidebar-right div#main {
+  float: left;
+  width: 470px;
+}
 
 div#content { 
   padding: 0px 10px;
@@ -259,15 +262,14 @@ h2.node-title {
   text-decoration: none;
 }
 
-.node-links li.comment_forbidden a {
+.node-links ul.links li.comment_forbidden a {
   background-color: transparent;
-  color: #a02c2c;
   margin: 0px;
   padding: 0px;
   -moz-border-radius: 0px;
 }
 
-.node-links li.comment_forbidden a:hover { text-decoration: underline; }
+.node-links ul.links li.comment_forbidden a:hover { text-decoration: underline; }
 
 /* == Page: Content: Recent Activity Stream =========================== */
 
@@ -328,7 +330,7 @@ div.collapsible {
   -moz-border-radius: 3px;
 }
 
-/* == OSSO Sidebar ==================================================== */
+/* == OSSO Login Page ================================================= */
 
 ul.osso-tabs {
   background-color: #fff;
@@ -362,7 +364,7 @@ form#user-login {
   background-color: #e6e6e6;
   clear: right;
   float: right;
-  margin: 10px -10px 10px 10px;
+  margin: 0px -10px 0px 10px;
   width: 320px;
 }
 
@@ -385,6 +387,11 @@ form#user-login {
 #user-pass input.form-submit,
 #user-login input.form-submit { margin: 0px 10px 10px 10px; }
 
+div#block-osso_provider-login_message {
+  margin-top: 10px;
+  width: 460px;
+}
+
 /* == Admin Area ====================================================== */
 
 div.admin div.left,
@@ -404,6 +411,37 @@ div.admin-panel h3 {
 
 div.admin-panel div.body { padding: 10px; }
 
+/* == Page: Right ===================================================== */
+
+div#right {
+  background-color: #e6e6e6;
+  float: right;
+  padding: 0px 10px;
+  margin-top: 5px;
+  width: 300px;
+  -moz-border-radius: 3px;
+}
+
+#right h2.block-title {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+#right div.block-content { margin-bottom: 10px; }
+
+#right ul.user-profile li { margin: 10px 0px; }
+
+#right ul.user-profile span.item-title { font-weight: bold; }
+
+span.user-profile-picture {
+  background: transparent url(images/sprite-icons.png) -80px 0px no-repeat;
+  display: block;
+  float: left;
+  margin: 5px 10px 0px 0px;
+  width: 40px;
+  height: 40px;
+}
 
 /* == Footer ========================================================== */
 
