@@ -16,6 +16,8 @@ div#footer {
 
 /* == Forms =========================================================== */
 
+div.form-item { margin: 10px 0px; }
+
 input.form-submit {
   background-color: #999;
   color: #fff;
@@ -153,20 +155,7 @@ div#navigation { padding-top: 0px; }
 
 #navigation .primary-links li.first { border: none; }
 
-/* == Console ========================================================= */
-
-div#console { margin: 10px 0px; }
-
-#console div.messages,
-#console div.help {
-  background-color: #fea;
-  color: #540;
-  margin-top: 5px;
-  padding: 5px 10px;
-  -moz-border-radius: 3px;
-}
-
-/* == Breadcrumbs ===================================================== */
+/* == Page: Pre-content =============================================== */
 
 div.breadcrumb {
   background-color: #eee;
@@ -174,8 +163,6 @@ div.breadcrumb {
   padding: 2px 10px;
   -moz-border-radius: 3px;
 }
-
-/* == #page #main ===================================================== */
 
 h2.page-title {
   font-size: 20px;
@@ -190,6 +177,7 @@ ul.primary-tabs {
   padding: 5px 5px 0px;
 }
 
+/* Primary tabs */
 ul.primary-tabs li { padding: 0px; }
 
 .primary-tabs a {
@@ -205,23 +193,44 @@ ul.primary-tabs li { padding: 0px; }
 
 .primary-tabs a:hover { background-color: #f3f3f3; }
 
-/* == Node ============================================================ */
+/* Console */
+div#console { margin: 10px 0px; }
+
+#console div.messages,
+#console div.help {
+  background-color: #fea;
+  color: #540;
+  margin-top: 5px;
+  padding: 5px 10px;
+  -moz-border-radius: 3px;
+}
+
+/* == Page: Content =================================================== */
+
+div#content { 
+  padding: 0px 10px;
+}
+
+h2.block-title { 
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* == Page: Content: Node ============================================= */
 
 div.node {
-  padding-bottom: 9px;
+  padding: 10px;
   border-bottom: 1px solid #ccc;
-  margin-bottom: 10px;
+  margin: 0px -10px;
 }
 
 h2.node-title {
   font-size: 20px;
-  padding: 10px 10px 0px;
+  margin: 10px -10px;
+  padding: 0px 10px;
 }
 
 h2.node-title a { color: #a02c2c; }
-
-div.node-submitted,
-div.node-content { margin: 10px; }
 
 .node-submitted {
   color: #666;
@@ -229,28 +238,27 @@ div.node-content { margin: 10px; }
   font-style: italic;
 }
 
-.node-links ul.links li {
-  float: right;
-  padding: 0px;
-}
+.node-links ul.links li a { float: none; }
+
+.node-links ul.links li { padding: 0px; }
 
 .node-links a {
   background-color: #eee;
   color: #666;
-  margin-right: 10px;
+  margin-left: 10px;
   padding: 2px 10px;
   -moz-border-radius: 5px;
 }
 
 .node-links a:hover { background-color: #e0e0e0; }
 
-/* == Recent Activity Stream ========================================== */
+/* == Page: Content: Recent Activity Stream =========================== */
 
 .view-activity div.views-row {
   border-bottom: 1px solid #eee;
   font-size: 14px;
-  margin: 0px;
   padding: 10px;
+  margin: 0px -10px;
 }
 
 .view-activity .views-row div.views-field-field-type-value {
@@ -258,8 +266,8 @@ div.node-content { margin: 10px; }
   display: block;
   float: left;
   margin: 5px 10px 10px 0px;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   text-indent: -9999px;
 }
 
@@ -268,7 +276,7 @@ div.node-content { margin: 10px; }
 }
 
 .view-activity .views-row div.activity-type-post {
-  background-position: -50px 0px;
+  background-position: -40px 0px;
 }
 
 .view-activity div.views-field-title { font-weight: bold; }
@@ -283,6 +291,7 @@ div.node-content { margin: 10px; }
 div.node-form,
 div.box {
   background-color: #f6f6f6;
+  margin: 0px -10px;
   padding: 10px;
   -moz-border-radius: 3px;
 }
@@ -306,6 +315,7 @@ div.collapsible {
 
 ul.osso-tabs {
   background-color: #fff;
+  margin-right: -10px;
   padding: 0px;
   width: 320px;
 }
@@ -332,7 +342,7 @@ form#user-login {
   background-color: #e6e6e6;
   clear: right;
   float: right;
-  margin: 10px 0px;
+  margin: 10px -10px 10px 10px;
   width: 320px;
 }
 
@@ -353,15 +363,36 @@ form#user-login {
 
 #user-register input.form-submit,
 #user-pass input.form-submit,
-#user-login input.form-submit { margin: 0px 10px 10px 0px; }
+#user-login input.form-submit { margin: 0px 10px 10px 10px; }
+
+/* == Admin Area ====================================================== */
+
+div.admin div.left,
+div.admin div.right { 
+  margin: 0px -10px;
+  width: 395px;
+}
+
+div.admin div.left { float: left; }
+
+div.admin div.right { float: right; }
+
+div.admin-panel h3 {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+div.admin-panel div.body { padding: 10px; }
+
 
 /* == Footer ========================================================== */
 
-div#footer { padding-bottom: 10px; }
+div#footer { padding: 10px; }
 
 #footer div.limiter {
   background-color: #eee;
   color: #999;
+  font-size: 11px;
   padding: 5px 10px;
   -moz-border-radius: 3px;
 }
