@@ -379,6 +379,7 @@ ul.osso-tabs li { padding: 0px; }
   text-decoration: none;
 }
 
+form#openid-provider-sso-confirm,
 form#user-register,
 form#user-pass,
 form#user-login {
@@ -390,6 +391,7 @@ form#user-login {
   width: 300px;
 }
 
+#openid-provider-sso-confirm input.form-text,
 #user-register input.form-text,
 #user-pass input.form-text,
 #user-login input.form-text {
