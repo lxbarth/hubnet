@@ -61,11 +61,6 @@ a {
 
 a:hover { text-decoration: underline; }
 
-h1 a:hover,
-h2 a:hover,
-.breadcrumb a:hover,
-ul.links a:hover { text-decoration: none; }
-
 
 /* == Universal Top Bar =============================================== */
 
@@ -115,6 +110,8 @@ div#hub-bar { padding-top: 10px; }
   letter-spacing: -1px;
 }
 
+#branding h1.site-name a:hover { text-decoration: none; }
+
 #branding h2.site-slogan {
   color: #fff;
   font-size: 11px;
@@ -123,7 +120,7 @@ div#hub-bar { padding-top: 10px; }
 
 #branding a.add-story {
   background-color: #fff;
-  color: #a02c2c;
+/*  color: #a02c2c;*/
   float: right;
   font-weight: bold;
   margin: 10px;
@@ -148,15 +145,15 @@ div#navigation { padding-top: 0px; }
   -moz-border-radius-bottomright: 3px;
 }
 
+#navigation .primary-links li { 
+  border-left: 1px solid #fff;
+}
+
 #navigation .primary-links a {
   color: #fff;
   font-size: 12px;
   text-transform: uppercase;
 }
-
-#navigation .primary-links a:hover { color: #e9afaf; }
-
-#navigation .primary-links li { border-left: 1px solid #c83737; }
 
 #navigation .primary-links li.first { border: none; }
 
@@ -196,7 +193,10 @@ ul.primary-tabs li { padding: 0px; }
 
 .primary-tabs li.active a { background-color: #fff; }
 
-.primary-tabs a:hover { background-color: #f3f3f3; }
+.primary-tabs a:hover {
+  background-color: #f3f3f3;
+  text-decoration: none;
+}
 
 /* Console */
 div#console { margin: 10px 0px; }
@@ -235,8 +235,6 @@ h2.node-title {
   padding: 0px 10px;
 }
 
-h2.node-title a { color: #a02c2c; }
-
 .node-submitted {
   color: #666;
   font-size: 12px;
@@ -245,19 +243,21 @@ h2.node-title a { color: #a02c2c; }
 
 .node-links ul.links { float: right; }
 
-.node-links ul.links li a { float: none; }
-
 .node-links ul.links li { padding: 0px; }
 
-.node-links a {
-  background-color: #eee;
+.node-links ul.links li a {
+  background-color: #e9e9e9;
+  float: none;
   color: #666;
   margin-left: 10px;
   padding: 5px 10px;
   -moz-border-radius: 5px;
 }
 
-.node-links a:hover { background-color: #e0e0e0; }
+.node-links ul.links li a:hover { 
+  background-color: #e0e0e0;
+  text-decoration: none;
+}
 
 .node-links li.comment_forbidden a {
   background-color: transparent;
@@ -351,7 +351,10 @@ ul.osso-tabs li { padding: 0px; }
 
 .osso-tabs li a.active { background-color: #e6e6e6; }
 
-.osso-tabs a:hover { background-color: #d2d2d2; }
+.osso-tabs a:hover {
+  background-color: #d2d2d2;
+  text-decoration: none;
+}
 
 form#user-register,
 form#user-pass,

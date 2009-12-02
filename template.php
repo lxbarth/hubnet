@@ -17,6 +17,7 @@ function hubnet_preprocess_page (&$vars) {
   $data .= "div#navigation div.limiter {\n";
   $data .= "  background-color: {$settings['header_color_dark']};\n";
   $data .= "}\n";
+  $data .= "a { color: {$settings['header_color_dark']};\n";
   $data .= "</style>\n";
   $vars['styles'] .= $data;
 }
