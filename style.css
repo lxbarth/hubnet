@@ -1,0 +1,285 @@
+body {
+  background-color: #f2f2f2;
+  padding: 10px 0px;
+}
+
+div#hub-bar,
+div#branding,
+div#navigation,
+div#page,
+div#footer {
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 5px 10px 0px;
+  width: 800px;
+}
+
+input.form-text,
+textarea { padding: 4px; }
+
+/* == Links =========================================================== */
+
+ul.links li { padding: 0px 10px; }
+
+h1 a,
+h2 a,
+.breadcrumb a,
+ul.links a { text-decoration: none; }
+
+
+/* == Universal Top Bar =============================================== */
+
+div#hub-bar { padding-top: 10px; }
+
+#hub-bar li,
+#hub-bar a {
+  color: #fff;
+  font-size: 12px;
+}
+
+#hub-bar a { 
+  padding: 2px 0px;
+}
+
+#hub-bar ul.primary-links .first {
+  background-color: #4d4d4d;
+  -moz-border-radius-topleft: 2px;
+  -moz-border-radius-bottomleft: 2px;
+}
+
+#hub-bar div.limiter {
+  background-color: #333;
+  color: #fff;
+  padding: 0px 1px;
+  -moz-border-radius: 3px;
+}
+
+#hub-bar ul.hub-links { float: left; }
+
+#hub-bar ul.user-links { float: right; }
+
+/* == Main Header ===================================================== */
+
+#branding div.limiter {
+  background-color: #c83737;
+  padding: 10px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+}
+
+#branding h1.site-name { margin: 5px 0px 0px; }
+
+#branding h1.site-name a {
+  color: #fff;
+  font-size: 30px;
+}
+
+#branding h2.site-slogan {
+  color: #fff;
+  font-size: 11px;
+  font-weight: normal;
+}
+
+#branding a.add-story {
+  background-color: #fff;
+  color: #a02c2c;
+  float: right;
+  font-weight: bold;
+  margin: 10px;
+  padding: 5px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -moz-border-radius: 15px;
+}
+
+#branding a.add-story:before { content:"+ "; }
+
+#branding a.add-story:hover { opacity: 0.8; }
+
+/* == Navigation ====================================================== */
+
+div#navigation { padding-top: 0px; }
+
+#navigation div.limiter {
+  background-color: #a02c2c;
+  padding: 5px 0px;
+  -moz-border-radius-bottomleft: 3px;
+  -moz-border-radius-bottomright: 3px;
+}
+
+#navigation .primary-links a {
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+#navigation .primary-links a:hover { color: #e9afaf; }
+
+#navigation .primary-links li { border-left: 1px solid #c83737; }
+
+#navigation .primary-links li.first { border: none; }
+
+/* == Console ========================================================= */
+
+div#console { margin: 10px 0px; }
+
+#console div.messages,
+#console div.help {
+  background-color: #fea;
+  color: #540;
+  margin-top: 5px;
+  padding: 5px 10px;
+  -moz-border-radius: 3px;
+}
+
+/* == Breadcrumbs ===================================================== */
+
+div.breadcrumb {
+  background-color: #eee;
+  color: #999;
+  padding: 2px 10px;
+  -moz-border-radius: 3px;
+}
+
+/* == #page #main ===================================================== */
+
+h2.page-title {
+  font-size: 20px;
+  font-weight: normal;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+ul.primary-tabs {
+  background-color: #e0e0e0;
+  margin: 0px 0px 10px;
+  padding: 5px 5px 0px;
+}
+
+ul.primary-tabs li { padding: 0px; }
+
+.primary-tabs a {
+  background-color: #eee;
+  color: #666;
+  margin-right: 1px;
+  padding: 5px 10px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+}
+
+.primary-tabs li.active a { background-color: #fff; }
+
+.primary-tabs a:hover { background-color: #f3f3f3; }
+
+/* == Node ============================================================ */
+
+div.node {
+  padding-bottom: 9px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+h2.node-title {
+  font-size: 20px;
+  padding: 10px 10px 0px;
+}
+
+h2.node-title a { color: #a02c2c; }
+
+div.node-submitted,
+div.node-content { margin: 10px; }
+
+.node-submitted {
+  color: #666;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.node-links ul.links li {
+  float: right;
+  padding: 0px;
+}
+
+.node-links a {
+  background-color: #eee;
+  color: #666;
+  margin-right: 10px;
+  padding: 2px 10px;
+  -moz-border-radius: 5px;
+}
+
+.node-links a:hover { background-color: #e0e0e0; }
+
+/* == OSSO Sidebar ==================================================== */
+
+ul.osso-tabs {
+  background-color: #fff;
+  padding: 0px;
+  width: 320px;
+}
+
+ul.osso-tabs li { padding: 0px; }
+
+.osso-tabs a {
+  background-color: #ccc;
+  color: #333;
+  font-size: 12px;
+  margin-right: 1px;
+  padding: 5px 10px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+}
+
+.osso-tabs li a.active { background-color: #e6e6e6; }
+
+.osso-tabs a:hover { background-color: #d2d2d2; }
+
+form#user-register,
+form#user-pass,
+form#user-login {
+  background-color: #e6e6e6;
+  clear: right;
+  float: right;
+  width: 320px;
+}
+
+#user-register .form-item,
+#user-pass .form-item,
+#user-login .form-item { margin: 10px; }
+
+#user-register .form-item .form-item,
+#user-pass .form-item .form-item,
+#user-login .form-item .form-item { margin: 0px; }
+
+#user-register input.form-text,
+#user-pass input.form-text,
+#user-login input.form-text {
+  background-color: #fff;
+  font-size: 18px;
+  width: 290px;
+}
+
+#user-register input.form-submit,
+#user-pass input.form-submit,
+#user-login input.form-submit {
+  background-color: #999;
+  color: #fff;
+  float: right;
+  font-size: 11px;
+  font-weight: bold;
+  margin: 0px 10px 10px 0px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  -moz-border-radius: 15px;
+}
+
+/* == Footer ========================================================== */
+
+div#footer { padding-bottom: 10px; }
+
+#footer div.limiter {
+  background-color: #eee;
+  color: #999;
+  padding: 5px 10px;
+  -moz-border-radius: 3px;
+}
