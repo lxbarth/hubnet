@@ -226,6 +226,7 @@ ul.primary-tabs li { padding: 0px; }
 /* Console */
 div#console { margin: 10px 0px; }
 
+div.sso-message,
 #console div.messages,
 #console div.help {
   background-color: #fea;
@@ -235,6 +236,13 @@ div#console { margin: 10px 0px; }
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
+}
+
+div.sso-message {
+  font-size: 20px;
+  line-height: 25px;
+  padding: 10px;
+  margin: 10px 0;
 }
 
 /* == Page: Main ====================================================== */
