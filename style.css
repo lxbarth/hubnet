@@ -362,6 +362,7 @@ div.comment {
 
 .view-activity div.views-field-title { font-weight: bold; }
 
+.view-activity div.views-field-description,
 .view-activity div.views-field-timestamp {
   color: #666;
   font-size: 12px;
